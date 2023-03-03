@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트적용</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+        .nanum-brush {
+            font-family: 'Nanum Brush Script', cursive;
+        }
+
+        .gown-dodum{
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        @font-face {
+        font-family: "Pretendard-Regular";
+        src: url("font/Pretendard-Regular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        @font-face {
+        font-family: "Pretendard-Bold";
+        src: url("font/Pretendard-Bold.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+        }
+        
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            font-family: Pretendard-Regular, "Times New Roman", Dotum, "돋움", sans-serif;
+        }
+
+        .pt-b {
+            font-family: Pretendard-Bold, "Times New Roman", Dotum, "돋움", sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+            text-align: justify;
+            word-break: break-all;
+            line-height: 140%;
+            text-indent: 1em;
+        }
+
+        .va {
+            font-size: 2rem;
+        }
+
+        .va strong {
+            font-size: 0.5em;
+            vertical-align: top;
+        }
+
+        .box {
+            background: salmon;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        안녕
+    </div>
+    <p class="va">안녕하세요 <strong>반갑습니다</strong></p>
+    <p class="pt-b">안녕하세요</p>
+    <p class="pt-b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea laboriosam quidem eos dolor sapiente reiciendis culpa odio doloremque harum, assumenda recusandae non voluptatem iusto perspiciatis hic minima, officiis tempora suscipit.</p>
+    <p class="nanum-brush">안녕하세요</p>
+    <p class="gown-dodum">안녕하세요</p>
+</body>
+
+</html>
