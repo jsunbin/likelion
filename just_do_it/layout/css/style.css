@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    }
+    
+    /* 전체 */
+    
+div {
+    height: 200px;
+    float: left;
+    }
+
+header {
+    background-color: skyblue;
+    width: 100%;
+}
+
+section article {
+    color: #fff;
+    background-color: navy;
+    width: 80%;
+    height: 200px;
+    float: left;
+}
+
+aside {
+    background-color: greenyellow;
+    width: 20%;
+    height: 200px;
+    float: left;
+}
+
+footer {
+    color: #fff;
+    background-color: orangered;
+    width: 100%;
+}
+
