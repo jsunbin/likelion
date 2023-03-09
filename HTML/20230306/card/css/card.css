@@ -1,42 +1,34 @@
 body {
-    background-color: rosybrown;
+    background: rosybrown;
 }
 
-h2,
-p {
+h2, p {
     margin: 0;
 }
 
-.card-item {
-    /* width: 288px;
-    background: #fff;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden; */
-}
-
-.card-item a {
+.card-item a{
     text-decoration: none;
-    color: #29363d;
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
+    color:#29363D;
     /* 탭 키를 눌렀을 때, 마우스 접근성을 위해서 block요소로 변환 */
     display: block;
     width: 288px;
+    background: #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .card-item img {
     width: 100%;
     /* 이미지 비율을 조정한 후, object-fit으로 적당한 이미지를 나타낸다. */
-    aspect-ratio: 288/196; 
+    aspect-ratio: 288/196;
     object-fit: cover;
     /* 이미지와 텍스트 사이에 여백이 있는지 background-color로 확인 후 적용하여 여백 제거 */
     vertical-align: top;
 }
 
 .card-text {
-    padding: 24px 16px 16px;
+    padding: 24px 15px 16px;
 }
 
 .card-text .title {
@@ -48,17 +40,16 @@ p {
 
 .card-text .title + p {
     font-size: 12px;
-    color: #5a6a72;
+    color: #5A6A72;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     word-break: break-all;
     margin: 12px 0 16px;
-    line-height: 20px;
 }
 
-.card-text .underline {
+.underline {
     text-decoration: underline;
     font-weight: bold;
     font-size: 14px;
