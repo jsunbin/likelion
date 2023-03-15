@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid auto fill/fit</title>
+  <style>
+    .container {
+      display: grid;
+      gap: 10px;
+      
+      width: 600px;
+      background: #ddd;
+      margin-bottom: 10px;
+      border: 10px solid #aaa;
+    }
+
+    .container div {
+      background: skyblue;
+      height: 100px;
+      border: 10px solid royalblue;
+    }
+    
+    /* 브라우저 크기에 따라 빈 곳이 생겨도 기존 크기를 유지함 */
+    .autofill {
+      grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+    }
+    
+    /* 브라우저 크기에 따라 빈 곳이 없도록 영역을 꽉 채워 줌 */
+    .autofit {
+      grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container autofill">
+    <div>item</div>
+    <div>item</div>
+    <div>item</div>
+    <div>item</div>
+  </div>
+  
+  <div class="container autofit">
+    <div>item</div>
+    <div>item</div>
+    <div>item</div>
+    <div>item</div>
+  </div>
+</body>
+</html>
