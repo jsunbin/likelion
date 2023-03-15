@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-실습</title>
+    <style>
+        .container {
+            display: grid;
+            background-color: #eee;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-areas:
+            "a a a b b"
+            "a a a b b"
+            "c c d b b"
+            "e e f f f";
+            height: 500px;
+            gap: 10px
+        }
+
+        .item1 {
+            background-color: royalblue;
+            grid-area: a;
+        }
+
+        .item2 {
+            background-color: gold;
+            grid-area: b;
+        }
+
+        .item3 {
+            background-color: slateblue;
+            grid-area: c;
+        }
+
+        .item4 {
+            background-color: orange;
+            grid-area: d;
+        }
+
+        .item5 {
+            background-color: salmon;
+            grid-area: e;
+        }
+
+        .item6 {
+            background-color: olive;
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+        <div class="item4">D</div>
+        <div class="item5">E</div>
+        <div class="item6">F</div>
+    </div>
+</body>
+</html>
