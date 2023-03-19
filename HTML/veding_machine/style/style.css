@@ -1,0 +1,111 @@
+/* reset */
+:root {
+  --basic-color: #EAE8FE;
+}
+
+section >div {
+  background-color: #fff;
+  width: 360px;
+  height: 545px;
+  padding: 31px 27px;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  background: #EAE8FE;
+}
+
+/* header */
+.img-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 67px;
+  
+}
+
+.logo {
+  height: 204px;
+  aspect-ratio: 436 / 204;
+}
+
+/* section1: menu */
+/* menu-container */
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.menu-area {
+}
+
+.menu-container {
+  display: grid;
+  /* box-shadow: inset 0 0 10px red; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* grid-template-areas:
+  "a b c"
+  "d e f"; */
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.menu-container .menu-item {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu-item > div {
+  margin: 9px 11px;;
+}
+.menu-item .item-img {
+  background: url(../img/콜라.svg) no-repeat center;
+  width: auto;
+  height: 65px;
+}
+
+.menu-item .item-name {
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 13px;
+  color: #333333;
+  margin-top: 6px;
+  margin-bottom: 7px;
+}
+
+.menu-item .price {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  color: #FFFFFF;
+  background: #6327FE;
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+/* user-container */
+.user-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-areas:
+  "a a b"
+  "c c d"
+  "e e f"
+  "e e f";
+  gap: 12px 11px;
+}
+
+/* section: total-area */
+.total-aria {
+  background-color: #fff;
+}
