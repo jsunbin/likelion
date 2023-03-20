@@ -1,0 +1,68 @@
+/* start */
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+ul {
+  overflow-y: scroll;
+  height: 364px;
+}
+.drink-container {
+  width: 306px;
+  height: 364px;
+  background: #EAE8FE;
+}
+li {
+  box-sizing: border-box;
+  width: 276px;
+  height: 46px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  padding: 6px 8px 7px 10px;
+  margin-bottom: 6px;
+  margin-left: 12px;
+  margin-right: 18px;
+}
+
+li:first-child {
+  margin-top: 6px;
+}
+
+.drink-info {
+  /* box-shadow: inset 0 0 10px red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.drink {
+  height: 100%;
+  background: url(../img/콜라_s.svg) no-repeat left center;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 27px;
+}
+
+.drink.green {
+  background: url(../img/콜라_s_green.svg) no-repeat left center;
+}
+
+.amount {
+  float: right;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

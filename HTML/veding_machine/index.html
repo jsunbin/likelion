@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coca-Cola</title>
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/common.css">
   
 </head>
 
@@ -21,58 +22,147 @@
     <div class="main-container">
       <!-- section1: menu -->
       <section class="menu-area">
-        <div>
+        <div class="menu-inner">
           <div class="menu-container">
             <div class="menu-item">
               <div>
-                <div class="item-img"></div>
+                <div class="item-img a"></div>
                 <h4 class="item-name">Original_Cola</h4>
                 <p class="price">1000원</p>
               </div>
             </div>
             <div class="menu-item">
               <div>
-                <div class="item-img"></div>
+                <div class="item-img b"></div>
                 <h4 class="item-name">Violet_Cola</h4>
                 <p class="price">1000원</p>
               </div>
             </div>
             <div class="menu-item">
               <div>
-                <div class="item-img"></div>
+                <div class="item-img c"></div>
                 <h4 class="item-name">Yellow_Cola</h4>
                 <p class="price">1000원</p>
               </div>
             </div>
             <div class="menu-item">
               <div>
-                <div class="item-img"></div>
+                <div class="item-img d"></div>
                 <h4 class="item-name">Cool_Cola</h4>
                 <p class="price">1000원</p>
               </div>
             </div>
             <div class="menu-item">
               <div>
-                <div class="item-img"></div>
+                <div class="item-img e"></div>
                 <h4 class="item-name">Green_Cola</h4>
                 <p class="price">1000원</p>
               </div>
             </div>
             <div class="menu-item">
               <div>
-                <div class="item-img"></div>
+                <div class="item-img f"></div>
                 <h4 class="item-name">Orange_Cola</h4>
                 <p class="price">1000원</p>
               </div>
             </div>
           </div>
-          <div class="user-container"></div>
+          <div class="user-container">
+            <div class="left-money">잔액: <span class="float-right">1,000 원</span></div>
+            <button class="return-btn">거스름돈 반환</button>
+            <input class="input-money" placeholder="입금액 입력" type="number">
+            <button class="input-btn">입금</button>
+            <div class="item-list">
+              <div class="drink-container">
+                <ul>
+                  <li>
+                    <div class="drink-info">
+                      <p class="drink">Original_Cola</p>
+                      <p class="amount">1</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="drink-info">
+                      <p class="drink">Original_Cola</p>
+                      <p class="amount">1</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="drink-info">
+                      <p class="drink">Original_Cola</p>
+                      <p class="amount">1</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="drink-info">
+                      <p class="drink">Original_Cola</p>
+                      <p class="amount">1</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="drink-info">
+                      <p class="drink">Original_Cola</p>
+                      <p class="amount">1</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="drink-info">
+                      <p class="drink">Original_Cola</p>
+                      <p class="amount">1</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="drink-info">
+                      <p class="drink">Original_Cola</p>
+                      <p class="amount">1</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="drink-info">
+                      <p class="drink">Original_Cola</p>
+                      <p class="amount">1</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="get-btn">획득</button>
+          </div>
         </div>
       </section>
 
       <!-- section2: total-area -->
       <section class="total-area">
-        <div></div>
+        <!-- 소지금 -->
+        <div class="user-money-wrapper">
+          <div class="user-money">
+            소지금: <span class="float-right">25,000 원</span>
+          </div>
+        </div>
+        <!-- //소지금 -->
+
+        <!-- 획득한 음료 -->
+        <div class="drink-wrapper">
+          <h2 class="receipt-title">획득한 음료</h2>
+            <div class="drink-container">
+              <ul>
+                <li>
+                  <div class="drink-info">
+                    <p class="drink">Original_Cola</p>
+                    <p class="amount">1</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="drink-info">
+                    <p class="drink green">Green_Cola</p>
+                    <p class="amount">2</p>
+                  </div>
+                </li>
+      
+              </ul>
+            </div>
+          </section>
+        </div>
       </section>
     </div>
   </main>

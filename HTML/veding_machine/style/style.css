@@ -1,12 +1,19 @@
 /* reset */
 :root {
   --basic-color: #EAE8FE;
+  --highlight-color: #6327FE;
 }
 
-section >div {
+/* section >div {
   background-color: #fff;
   width: 360px;
-  height: 545px;
+  padding: 31px 27px;
+  box-sizing: border-box;
+} */
+
+.menu-area .menu-inner {
+  background-color: #fff;
+  width: 360px;
   padding: 31px 27px;
   box-sizing: border-box;
 }
@@ -22,6 +29,9 @@ body {
   background: #EAE8FE;
 }
 
+.float-right {
+  float: right;
+}
 /* header */
 .img-title {
   display: block;
@@ -68,11 +78,26 @@ body {
   margin: 9px 11px;;
 }
 .menu-item .item-img {
-  background: url(../img/콜라.svg) no-repeat center;
+  background: url(../img/콜라_red.svg) no-repeat center;
   width: auto;
   height: 65px;
 }
 
+.item-img.b {
+  background: url(../img/콜라_violet.svg) no-repeat center;
+}
+.item-img.c {
+  background: url(../img/콜라_yellow.svg) no-repeat center;
+}
+.item-img.d {
+  background: url(../img/콜라_cool.svg) no-repeat center;
+}
+.item-img.e {
+  background: url(../img/콜라_green.svg) no-repeat center;
+}
+.item-img.f {
+  background: url(../img/콜라_orange.svg) no-repeat center;
+}
 .menu-item .item-name {
   font-weight: 500;
   font-size: 9px;
@@ -87,7 +112,7 @@ body {
   font-size: 12px;
   line-height: 100%;
   color: #FFFFFF;
-  background: #6327FE;
+  background: var(--highlight-color);
   border-radius: 50px;
   padding: 5px 15px;
 }
@@ -102,10 +127,100 @@ body {
   "c c d"
   "e e f"
   "e e f";
-  gap: 12px 11px;
+  gap: 11px 12px;
+}
+
+.user-container .left-money,
+.user-money {
+  grid-area: a;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--basic-color);
+  border-radius: 5px;
+  padding: 10px 6px 10px 7px;
+}
+
+.user-container .return-btn,
+.input-money,
+.input-btn {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.user-container .return-btn {
+  grid-area: b;
+}
+.user-container .input-money {
+  grid-area: c;
+  font-size: 13px;
+  padding: 10px 6px 10px 7px;
+}
+.user-container .input-btn {
+  grid-area: d;
+}
+.user-container .item-list {
+  grid-area: e;
+  height: 106px;
+  overflow-y: scroll;
+}
+.item-list .drink-container {
+
+}
+.user-container .get-btn {
+  grid-area: f;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  background-color: var(--highlight-color);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
 /* section: total-area */
-.total-aria {
-  background-color: #fff;
+.user-money-wrapper {
+  box-sizing: border-box;
+  background: #fff;
+  padding: 9px 27px;
+}
+
+.user-money {
+  width: 306px;
+  line-height: 32px;
+  box-sizing: border-box;
+  padding: 6px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-money span {
+  font-weight: 700;
+}
+
+/* 획득한 음료 */
+.drink-wrapper {
+  height: 496px;
+  margin-top: 20px;
+  background: #FFFFFF;
+  padding: 0 28px;
+}
+
+.drink-container {
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+}
+
+.receipt-title {
+  /* box-shadow: inset 0 0 10px red; */
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 28px;
+  margin: 0
 }
