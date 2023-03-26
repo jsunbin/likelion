@@ -18,6 +18,7 @@ h1 {
 .section-purple {
 	background-color: #673399;
 	color: #fff;
+	padding: 100px 0;
 }
 
 .wrapper {
@@ -25,22 +26,40 @@ h1 {
 	margin: 0 auto;
 }
 
-.title {
+.section-header {
+	box-shadow: inset 0 0 10px red;
+	margin-bottom: 100px;
+}
+
+.title-wrapper {
 	display: flex;
 	align-items: center;
+}
+
+.title {
+	box-shadow: inset 0 0 10px green;
+	flex-basis: 26%;
+	font-size: 40px;
+}
+
+.title-wrapper p {
+	box-shadow: inset 0 0 10px orange;
+	max-width: 400px;
 }
 
 .card {
 	box-shadow: inset 0 0 10px red;	
 	background-color: #fff;
 	display: flex;
+	margin-bottom: 24px;
 }
 
 .card-cover {
 	box-shadow: inset 0 0 10px gold;
+	flex-basis: 26%;
 }
 
 .card-contents {
-	box-shadow: inset 0 0 10px papayawhip;
-	
+	box-shadow: inset 0 0 10px royalblue;
+	flex-grow: 1;
 }
