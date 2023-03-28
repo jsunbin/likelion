@@ -1,0 +1,212 @@
+:root {
+	font-family: 'Montserrat', sans-serif;
+/*
+font-weight: 500;
+font-weight: 700;
+*/
+}
+
+body, p {
+margin: initial;
+}
+
+h1, h2, h3,
+ul, li{
+margin: initial;
+padding: initial;
+}
+
+ul, li {
+list-style: none;
+}
+
+img {
+max-width: 100%;
+height: auto;
+vertical-align: top;
+}
+
+.section-purple {
+background-color: #673399;
+color: #fff;
+padding: 100px 0;
+}
+
+.wrapper {
+width: 1080px;
+margin: 0 auto;
+}
+
+.section-header {
+margin-bottom: 100px;
+}
+
+.title-wrapper {
+display: flex;
+align-items: center;
+}
+
+.title {
+flex-basis: 26%;
+font-size: 40px;
+}
+
+.title strong {
+box-shadow: inset 0 -20px 0px orangered;
+}
+
+.title-wrapper p {
+max-width: 500px;
+display: flex;
+align-items: center;
+}
+
+.title-wrapper p::before {
+content: ' ';
+width: 60px;
+height: 2px;
+background-color: #fff;
+margin-right: 20px;
+flex-shrink: 0;
+}
+
+.card {
+background-color: #fff;
+display: flex;
+margin-bottom: 24px;
+}
+
+.card:nth-child(even) {
+flex-direction: row-reverse;
+}
+
+.card-cover {
+flex-basis: 26%;
+flex-shrink: 0;
+position: relative;
+}
+
+.card-cover img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.card-cover h2 {
+position: absolute;
+height: 100%;
+background-color: rgb( 0 0 0 / .4 );
+inset: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-size: 30px;
+}
+
+.card-contents {
+padding: 24px;
+/* display: flex;
+flex-direction: column; */
+flex-grow: 1;
+}
+
+.card-contents h3 {
+color: #673399;
+font-size: 18px;
+margin-bottom: 32px;
+}
+
+.lists li {
+color: #000;
+font-size: 14px;
+margin-bottom: 10px;
+/* "들여쓰기"를 위한 text-indent, padding-left */
+text-indent: -20px;
+padding-left: 20px;
+}
+
+.lists li:last-child {
+margin-bottom: 0;
+}
+.lists li::before {
+content: '';
+background-color: #bd8fe8;
+width: 10px;
+height: 10px;
+display: inline-block;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+
+/* .section-salmon */
+.section-salmon {
+	background-color: seashell;
+	padding: 100px 0;
+}
+
+
+.section-salmon .title-wrapper {
+	justify-content: space-between;
+}
+
+.title-s {
+	box-shadow: inset 0 0 10px red;
+	flex-basis: 344px;
+}
+
+.add-calendar {
+	box-shadow: inset 0 0 10px gold;
+}
+
+.list-event {
+	display: flex;
+	/* justify-content: space-between; */
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.list-unit {
+	box-shadow: inset 0 0 10px red;
+	flex-basis: 344px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	margin-right: 24px;
+}
+
+.list-unit:nth-child(3n) {
+	margin-right: 0;
+}
+
+.event-contents {
+	display: flex;
+}
+
+.event-cover {
+	box-shadow: inset 0 0 10px royalblue;
+	flex-basis: 344px;
+}
+
+.stack-list {
+	box-shadow: inset 0 0 10px orangered;
+	
+}
+
+.stack-list span {
+	box-shadow: inset 0 0 10px olive;
+	
+}
+
+.event-title {
+	box-shadow: inset 0 0 10px hotpink;
+}
+
+.event-info {
+	box-shadow: inset 0 0 10px slateblue;
+	;
+}
+
+.more  {
+	box-shadow: inset 0 0 10px yellowgreen;
+}
