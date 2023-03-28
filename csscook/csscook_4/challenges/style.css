@@ -11,7 +11,8 @@ margin: initial;
 }
 
 h1, h2, h3,
-ul, li{
+ul, li,
+a {
 margin: initial;
 padding: initial;
 }
@@ -24,6 +25,11 @@ img {
 max-width: 100%;
 height: auto;
 vertical-align: top;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .section-purple {
@@ -146,37 +152,52 @@ margin-right: 10px;
 	padding: 100px 0;
 }
 
-
 .section-salmon .title-wrapper {
 	justify-content: space-between;
 }
 
 .title-s {
-	box-shadow: inset 0 0 10px red;
+	color: salmon;
 	flex-basis: 344px;
 }
 
 .add-calendar {
-	box-shadow: inset 0 0 10px gold;
+	color: #fff;
+	font-size: 14px;
+	background-color: orangered;
+	padding: 15px 20px;
+	border-radius: 5px;
+	box-shadow: inset 0px -5px 4px #AD3B1A;
 }
 
 .list-event {
 	display: flex;
-	/* justify-content: space-between; */
-	align-items: center;
+	flex-direction: row;
 	flex-wrap: wrap;
 }
 
 .list-unit {
-	box-shadow: inset 0 0 10px red;
+	display: flex;
 	flex-basis: 344px;
+	flex-direction: column;
+	justify-content: space-between;
 	flex-shrink: 0;
 	flex-grow: 0;
+	background-color: #fff;;
 	margin-right: 24px;
+	position: relative;
+	box-shadow: 0 0 5px 1px #f1e0f8;
 }
 
 .list-unit:nth-child(3n) {
 	margin-right: 0;
+}
+
+/* soldout 리본 */
+.soldout-ribbon {
+	position: absolute;
+	top: -1.5%;
+	left: -3%
 }
 
 .event-contents {
@@ -184,29 +205,68 @@ margin-right: 10px;
 }
 
 .event-cover {
-	box-shadow: inset 0 0 10px royalblue;
 	flex-basis: 344px;
 }
 
 .stack-list {
-	box-shadow: inset 0 0 10px orangered;
-	
+	margin: 24px;
 }
 
 .stack-list span {
-	box-shadow: inset 0 0 10px olive;
-	
+	display: inline-block;
+	font-size: 12px;
+	color:#673399;
+	font-weight: bold;
+	background-color: #f1e0f8;
+	padding: 5px;
 }
 
 .event-title {
-	box-shadow: inset 0 0 10px hotpink;
+	font-size: 24px;
+	margin: 24px;
 }
 
 .event-info {
-	box-shadow: inset 0 0 10px slateblue;
-	;
+	font-size: 14px;
+	color: #8B8D8D;
+	margin: 24px;
 }
 
-.more  {
-	box-shadow: inset 0 0 10px yellowgreen;
+.more-area  {
+	display: flex;
+	height: 68px;
+	font-size: 12px;
+	color: #8B8D8D;
+	margin-left: 24px;
+	box-sizing: border-box;
+	border-top: 4px solid #eee;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.profile {
+	position: absolute;
+	top: 25%;
+	right: 0;
+	padding-right: 24px;
+}
+
+.profile img {
+	width: 30px;
+	position:relative;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	box-sizing: border-box;
+}
+
+.profile img:first-child {
+	top: 50%;
+	left: 28%
+}
+
+.profile img:nth-child(2) {
+	top: 50%;
+	left: 15%
 }
