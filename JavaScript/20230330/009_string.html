@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>string</title>
+</head>
+
+<body>
+  <script>
+    let txt = 'ABCDEFGHIJK'
+
+    console.log(txt + txt)
+    console.log(txt[0]) // Sass는 1부터 시작
+    console.log(txt[2])
+    console.log(txt[-1]) // 마이너스 인덱스 지원X
+    console.log(txt.length)
+    console.log(txt.indexOf('E'))
+    console.log(txt.search('E'))
+
+    console.log(txt.indexOf('Z')) // 없는 값은 -1
+    console.log(txt.search('Z')) // 없는 값은 -1
+
+    // 정규표현식 ===============
+    let regExp = /CD/;
+    console.log(txt.search(regExp));
+    console.log(txt.replace('ABC', 'hello'))
+
+    let txt2 = 'abcdeHelloabcde'
+    let regExp2 = /[A-Z]/g;
+    console.log(txt2.search(regExp2))
+
+    let txt3 = 'abcdeHelloabcde'
+    let regExp3 = /[A-Z]/g;
+    console.log(txt2.replace(regExp2, 'h'))
+
+  </script>
+</body>
+</html>

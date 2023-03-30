@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>변수의 타입</title>
+</head>
+
+<body>
+  <script>
+    // 원시타입 string, number, bigint, boolean, undefined, symbol, null
+    // string ===============
+    let str1 = 'hello';
+    let str2 = str1;
+    console.log(str2); // 'hello'
+
+    str1 = 'world';
+    console.log(str2); // str2에 할당된 값은 여전히 'hello' 입니다.
+
+    console.log(typeof 'hello')
+    console.log(typeof "hello")
+
+    // number ===============
+    console.log(typeof 10)
+    console.log(typeof 10.1)
+    console.log(typeof NaN)
+
+    // boolean ===============
+    console.log(typeof true)
+    console.log(typeof false)
+    
+    // undefined ===============
+    console.log(typeof undefined)
+    let a;
+    console.log(a)
+    
+    // null ===============
+    // 값이 비어있음을 명시적으로 나타냄
+    console.log(typeof null) //개발자가 설계 오류를 인정
+    
+    // bigint ===============
+    // 2^53 - 1 보다 큰 정수의 경우 숫자 뒤에 n을 붙여주면 정확한 계산이 가능
+    
+    // symbol ===============
+    console.log(typeof Symbol())
+
+
+    // =========================
+    // function ===============
+    console.log(typeof function(){})
+    
+    // object ===============
+    console.log(typeof [10, 20, 30]) // 배열
+    console.log(typeof {a: 10, b: 10}) // object
+    console.log(typeof /정규표현식/gi)
+    
+    
+    // 형변환 =========================
+    // others -> string ===============
+    console.log(+'10')
+    console.log(Number('10')) // X
+    console.log(parseInt('10')) // O
+    console.log(parseFloat('10.1')) // O
+    console.log(parseInt(true)) // NaN
+    console.log(parseInt(false)) // NaN
+    console.log(Number(true)) // 1
+    console.log(Number(false)) // 0
+
+    // others -> number ===============
+    let sunbin = 10;
+    console.log(sunbin.toString()) // 10.toStrong()의 경우, 10.까지를 소수점으로 봄
+    console.log('' + 10)
+    console.log(String(10))
+    
+    // others -> boolean ===============
+    let sunbin2 = 10;
+    console.log(Boolean(-1))
+    console.log(Boolean(0))
+    console.log(Boolean(1000))
+    console.log(!!1000)
+    console.log(!!sunbin2)
+
+
+  </script>
+</body>
+</html>

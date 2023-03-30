@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>string</title>
+</head>
+
+<body>
+  <script>
+    let txt = 'abcdefghij'
+
+    // slice(시작인덱스, 종료인덱스) ===============
+    // 시작인덱스부터 종료인덱스-1까지 반환
+    console.log(txt.slice(1, 3)) // start, end(-1)
+    console.log(txt.slice(1)) // start
+    console.log(txt.slice(3, 1)) // 불가능
+    // console.log(txt.slice(2, -3)) // -3을 인식해서 2번째부터 -3번째 이전까지 잘라낸 'cdefg'
+
+
+    // substring(시작인덱스 종료인덱스) ===============
+    // 시작인덱스부터 종료인덱스-1까지 반환
+    console.log(txt.substring(1, 3))
+    console.log(txt.substring(3))
+    console.log(txt.substring(3, 1)) // substring에서는 가능
+    // console.log(txt.substring(2, -3)) // 마이너스 값을 0으로 인식해서 txt.substring(2, 0)이 된다. 
+
+
+    // repalce ===============
+    let txt2 = 'eatinglab CEO Sunbin CEO'
+    console.log(txt2.replace('CEO', 'COO'))
+    console.log(txt2.replace(/CEO/g, 'COO'))
+    // 구 브라우저 지원이 안될 가능성이 큼. 회사에서 확인 바람
+    console.log(txt2.replaceAll('CEO', 'COO'))
+
+
+    // ===============
+    console.log(txt2.toLowerCase());
+    console.log(txt2.toUpperCase());
+
+    // 알고리즘 문제에서 많이 쓰여요!
+    console.log(txt2.includes('CEO'))
+    console.log(txt2.includes('CDO'))
+
+    // 메서드 채이닝
+    txt2.replace('CEO', 'CDO').includes('CDO').toString().toUpperCase()
+
+    // ===============
+    // 정말 유용!
+    txt2.split(' ')
+
+
+    // 중급자 이상만 풀어보세유 ===============
+    let text1 = 'aa bb cc dd'
+    let text2 = 'aa-bb-cc-dd'
+    let text3 = 'aa,bb,cc,dd'
+    let text4 = 'aa,bb-cc-dd' // 중급자 분들만 하세요.
+    // ['aa', 'bb', 'cc', 'dd']
+
+    // text2.split(/[,| |-]/g)
+
+    // 자주 사용되지는 않지만, 이걸 몰라서 직접 구현하면 번거로운 ===============
+    // trim: 공백 전체 제거 ==========
+    let test = '            hello world'
+    test.replaceAll(' ', '')
+
+    test.trim()
+
+    // padstart ===============
+    let str1 = '99'
+    str1.padStart(5, '0')
+
+
+  </script>
+</body>
+</html>

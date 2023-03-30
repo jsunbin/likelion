@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>변수</title>
+</head>
+
+<body>
+  <script>
+    // 변수를 선언하는 3가지 방법 ===============
+    var x = 3 // 모던자바스크립트에서는 지양
+    let y = 4
+    const z = 5
+
+    // 변수이름 ===============
+    // for문 안에서 변수가 쓰이지 않을 때만 변수로 _을 쓸 수 있다.
+
+    // 4개는 모두 다른 변수 입니다.
+    let abc = 100;
+    let Abc = 100;
+    let aBc = 100;
+    let abC = 100;
+
+    // 예약어 절대 X
+
+    // =============== 매우중요 ===============
+    // var. let, const ===============
+    // 변수: var, let
+    // 상수(변하지 않는 값, 파이. DOM 요소): const
+
+    // var는 키워드를 생략할수 있으나(엄격모드 에러) 생략하면 안되고, 모던 자바스크립트에서는 var 키워드를 지양
+
+    // let과 const는 블록-레벨 선언
+    // const는 반드시 초기화
+    // 가장 권하는 변수 선언: const -> 값 변경 X, 가독성을 높인다.
+
+    // scrop, 유효범위 ==========
+    if (true) {
+      let x = 100
+      console.log(x)
+    }
+    
+    console.log(x)
+    if (true) {
+      const x = 100
+      console.log(x)
+    }
+    console.log(x)
+
+    let ss = 0
+    for (let i = 0; i < 11; i++) {
+        ss = ss + i
+        const sss = ss / 10
+        console.log(sss)
+    }
+
+    // let ss = 0
+    // for (let i = 0; i < 11; i++) {
+    //     ss = ss + i
+    //     const sss = ss / 10
+    // }
+    // console.log(sss) // undefined error
+
+    const k = 10;
+    k = 12; // error -> 변수가 변경될 때
+
+    const kk = []
+    kk.push(10) // error 안남 
+
+  </script>
+</body>
+</html>
