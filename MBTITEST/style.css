@@ -16,3 +16,8 @@ article {
   height: 300px;
   margin: 0 auto;
 }
+
+.kakao-ad {
+  margin: 0 auto;
+  width: 320px;
+}
