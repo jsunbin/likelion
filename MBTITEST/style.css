@@ -21,3 +21,15 @@ article {
   margin: 0 auto;
   width: 320px;
 }
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.banner-img {
+  width: 300px;
+}
