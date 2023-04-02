@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>button transition</title>
+  <style>
+    [class^="btn"] {
+      width: 88px;
+      height: 32px;
+      background-attachment: #343f50;
+      box-shadow: 1px solid #1a202c;
+      color: #cbd5df;
+    }
+
+    [class^="btn"]:hover {
+      text-decoration: underline;
+      text-transform: uppercase;
+      color: white;
+      /* transition: color 0.3s, background-color 10s; */
+    }
+
+    /* .btn:not(:disabled):hover {
+      text-decoration: underline;
+      color: white;
+    } */
+
+    .btn:active {
+      box-shadow: inset 1px 1px #262f3e;
+    }
+
+    .btn:focus {
+      outline: none;
+      border: 1px solid #439aff;
+    }
+
+    .btn:disabled {
+      box-shadow: none;
+      color: #4a5568;
+      text-decoration: none;
+      background: #3a4556;
+      border: 1px solid #343e4e;
+    }
+
+    [class$="positive"] {
+      color: #439aff;
+    }
+
+    .btn-positive:hover,
+    .btn-positive:active {
+      background: #439aff;
+      border: 1px solid #439aff;
+    }
+
+    .btn-positive:hover {
+      box-shadow: inset 1px 1px #73b4ff;
+    }
+
+    .btn-positive:active {
+      box-shadow: inset 1px 1px #3b78be;
+    }
+
+    [class$="negative"] {
+      color: #EB5757;
+    }
+
+    .btn-negative:hover,
+    .btn-negative:active {
+      background: #EB5757;
+      border: 1px solid #EB5757;
+    }
+
+    .btn-negative:hover {
+      box-shadow: inset 1px 1px #FD6F6F;
+    }
+
+    .btn-negative:active {
+      box-shadow: inset 1px 1px #D94242
+    }
+  </style>
+</head>
+
+<body>
+  <button class="btn" type="button">Button</button>
+  <button class="btn-positive" type="button">Yes</button>
+  <button class="btn-negative" type="button">Del</button>
+  <button class="btn" type="button" disabled>Button</button>
+</body>
+</html>
