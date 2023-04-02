@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>button 동작 가상 선택자</title>
+  <style>
+    [class^="btn"] {
+      width: 88px;
+      height: 22px;
+      background: #343F50;
+      border: 1px solid #1A202C;
+      color: #CBD5DF;
+      cursor: pointer;
+    }
+
+    [class^="btn"]:hover {
+      text-decoration: underline;
+      color: white;
+    }
+
+    /* disabled가 아니면서 hover일 때
+    .btn:hover {
+      text-decoration: underline;
+      color: white;
+    } */
+
+    .btn:active {
+      box-shadow: inset 1px 1px #262f3e;      
+    }
+
+    .btn:focus {
+      outline: none;
+      border: 1px solid #439Aff;
+    }
+
+    .btn:disabled {
+      box-shadow: none;
+      color: #4a5568;
+      text-decoration: none;
+      background: #3a4556;
+      border: 1px solid #343e4e;
+    }
+
+    [class$="positive"]{
+      color: #439AFF;
+    }
+
+    .btn-positive:hover,
+    .btn-positive:active {
+        background: #439Aff;
+        box-shadow: inset 1px 1px #439aff;
+    }
+
+    .btn-positive:hover {
+      box-shadow: inset 1px 1px #73b4ff;
+    }
+
+    .btn-positive:active {
+      box-shadow: inset 1px 1px #3b78b3;
+    }
+
+    [class$="negative"] {
+      color: #eb5757;
+    }
+
+    .btn-negative:hover,
+    .btn-negative:active {
+      background: #eb5757;
+      border: 1px solid #eb5757;
+    }
+
+    .btn-negative:hover {
+      box-shadow: inset 1px 1px #fd6f6f;
+    }
+
+    .btn-negative:active {
+      box-shadow: inset 1px 1px #d94242;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="btn" type="button">Button</button>
+  <button class="btn-positive" type="button">Button</button>
+  <button class="btn-negative" type="button">Button</button>
+  <button class="btn" type="button" disabled>Button</button>
+</body>
+</html>
