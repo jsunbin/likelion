@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>할당연산, 단항연산, 증감연산</title>
+</head>
+
+<body>
+  <script>
+    // 할당연산
+    let x = 10;
+    x += 10;
+
+    // 단항연산
+    console.log(-(2))
+    console.log(-(2))
+    console.log(+(-2))
+    console.log(+(+2))
+    console.log(+(+'2'))
+
+    // 증감연산
+    let num = 3;
+    ++num // 선증가 후핟당
+    --num
+    num++ // 선할당 후증가
+    num--
+
+    // 실무에서는 구분하는 의미가 없음
+    for (let i = 0; i < 10; i++) {
+      console.log(i);
+    }
+
+    for (let i = 0; i < 10; ++i) {
+      console.log(i);
+    }
+
+  </script>
+</body>
+</html>
