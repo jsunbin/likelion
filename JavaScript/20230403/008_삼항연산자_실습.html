@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>삼항연산자_실습</title>
+</head>
+
+<body>
+  <script>
+    // 3항 연산자 실습
+    // 통장에 10000원 초과해서 있으면 '부자'
+    // 통장에 10000원 이하 있으면 '거지'
+    
+    const money = 11000;
+    const rich = money > 10000 ? '부자' : '거지'
+
+    // 3항 연산자 실습 (익숙해 지신 분만 실습하세요)
+    // 통장에 100000원 초과해서 있으면 '초부자'
+    // 통장에 10000원 초과해서 있으면 '부자'
+    // 통장에 10000원 이하 있으면 '거지'
+
+    const money2 = 100001;
+    const rich2 = (money2 > 100000) ? '찐부자' : ((money2 > 10000) ? '부자' : '거지')
+  </script>
+</body>
+</html>
