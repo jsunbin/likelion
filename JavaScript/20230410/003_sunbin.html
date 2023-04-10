@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습 | 하하하</title>
+  <style>
+    div {
+      width: 300px;
+      height: 300px;
+      background: #000;
+      margin: 0 auto;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      float: left;
+      margin: 50px;
+    }
+
+    .red {
+      background-color: red;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    .green {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="canvas"></div>
+  <ul>
+    <li><button type="button" class="btn-red">빨강</button></li>
+    <li><button type="button" class="btn-yellow">노랑</button></li>
+    <li><button type="button" class="btn-green">초록</button></li>
+  </ul>
+  
+
+  <script>
+    const canvas = document.querySelector(".canvas");
+    const redBtn = document.querySelector(".btn-red");
+    const yellowBtn = document.querySelector(".btn-yellow");
+    const greenBtn = document.querySelector(".btn-green");
+
+    redBtn.addEventListener('click', () => {
+      canvas.classList.add("red");
+    })
+    
+    yellowBtn.addEventListener('click', () => {
+      canvas.classList.add("yellow");
+    })
+    
+    greenBtn.addEventListener('click', () => {
+      canvas.classList.add("green");
+    })
+  </script>
+</body>
+</html>
