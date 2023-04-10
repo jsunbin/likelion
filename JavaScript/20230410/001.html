@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>hello</p>
+  <p>hello</p>
+  <p id="myTxt">hello</p>
+  <p class="txt1">hello</p>
+  <p class="txt1">hello</p>
+
+
+  점심 식단
+  <article id="container">
+      <ul>
+          <li>탕수육</li>
+          <li class="item-second">유산슬</li>
+          <li>짜장면</li>
+      </ul>
+  </article>
+  저녁 식단
+  <article>
+      <ul>
+          <li>된장국</li>
+          <li class="item-second">김치찌개</li>
+          <li>해장국</li>
+      </ul>
+  </article>
+
+  <script>
+    console.log(document.getElementById('myTxt'))
+    console.log(document.getElementsByTagName('p'))
+    console.log(document.getElementsByClassName('txt1'))
+
+    const element = document.getElementsByClassName('txt1')
+
+
+    console.log(document.getElementsByTagName('li')[1])
+    console.log(document.getElementsByClassName('item-second'))
+
+
+    const container = document.getElementById('container')
+    console.log(container.getElementsByTagName('li')[1])
+    console.log(container.getElementsByClassName('item-second'))
+
+    
+    console.log(container.querySelector('#item-second'))
+
+
+    console.log(document.querySelectorAll('li'))
+    console.log(container.querySelector('li:last-child'))
+
+
+    // HTMLCollection과 NodeList의 차이 ==================
+    // (1) ~ (3) 주석 처리 하면서 확인하기 ==========
+    console.log(container.querySelectorAll('li')) // NodeList는 정적임 -> 업데이트 안됨
+    console.log(container.getElementsByTagName('li'))
+
+    // // (1) element 생성 했을 때: NodeList는 정적이라 업데이트가 안됨. 생성 전 리스트 그대로를 유지
+    // const listItem = document.createElement('li')
+    // container.append(listItem)
+
+    // // (2) element를 제거 했을 때: 생성되었을 때랑 마찬가지로, NodeList는 제거 전 리스트 그대로를 유지
+    // const target = document.querySelector('.item-second')
+    // target.remove();
+
+    // (3) element 정보 바꿨을 때: 요소를 추가/제거 했을 때와는 다르게 적용이 됨..! 아예 정적인 것은 아니다
+
+    container.querySelector('.item-second').textContent = '라조기';
+    container.querySelector('.item-second').classList.add('new');
+
+  </script>
+</body>
+</html> 
