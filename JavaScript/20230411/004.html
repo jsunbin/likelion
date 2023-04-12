@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>innerHTML의 보안이슈</title>
+</head>
+
+<body>
+  <p>hello!</p>
+  <script>
+    // <script>태그 안에 넣어서 사용하는 것은 문제가 안되지만 아래처럼 다른 태그 안에서 실행되는 JS는 문제가 된다.
+    // 단순 텍스트를 넣을 때는 innerHTML은 사용하지 말아라~
+    const txt = document.querySelector('p');
+
+    const name = "<img src='x' onerror='alert(12312312)'>";
+
+    txt.innerHTML = name;
+  </script>
+
+</body>
+</html>

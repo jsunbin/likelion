@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>innerText가 쓰이는 경우</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- innerText을 가장 안쓰는 데, 쓰는 경우.. -->
+  <ul>
+    <li>
+      <figure>
+        <img src="" alt="잭필드">
+        <figcaption>
+          상품 가격: 39,990원 <span class="hidden">(주의) VIP만 받을 수 있는 혜택입니다.</span>
+        </figcaption>
+      </figure>
+    </li>
+  </ul>
+
+  <script>
+    const info = document.querySelector('figcaption');
+    console.log(info.textContent);
+    console.log(info.innerText);
+  </script>
+</body>
+</html>
