@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 제어하기 | data</title>
+</head>
+
+<body>
+  <!-- <img class="terran battle-cruiser" src="battle-cruiser.png" data-ship-id="324" data-weapons="laser"
+      data-health="400" data-mana="250" data-skill="yamato-cannon" /> -->
+
+  <p></p>
+  <input type="text">
+  <button>Write Something!</button>
+  <script>
+    const myBtn = document.querySelector("button");
+    const myP = document.querySelector("p");
+    const myInput = document.querySelector("input");
+
+    // myBtn.addEventListener('click', function () {
+    //     myP.textContent = myInput.value;
+    // });
+
+    // input 요소에 'input' 이벤트를 연결하면 실시간으로 값이 반영되게 만들 수도 있습니다.
+    myInput.addEventListener('input', () => {
+        myP.textContent = myInput.value;
+    });
+
+    myP.innerHTML = "<strong>I'm Strong!!</strong>";
+  </script>
+</body>
+
+</html
