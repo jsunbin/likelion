@@ -12,10 +12,10 @@ export const useLogin = () => {
   const { dispatch } = useAuthContext();
 
   // appAuth 객체를 통해 사용자 정보를 확인합니다.
-  console.log(appAuth.currentUser);
-  setInterval(() => {
-      console.log(appAuth.currentUser);
-  }, 1000)
+  // console.log(appAuth.currentUser);
+  // setInterval(() => {
+  //     console.log(appAuth.currentUser);
+  // }, 1000)
 
   const login = (email, password) => {
     setError(null);

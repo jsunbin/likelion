@@ -22,15 +22,14 @@ export default function Header() {
 					{user &&
 						<>
 							<p className="hello">환영합니다 <strong>{user.displayName}</strong>님!</p>
-							<Link to="/" className='btn-logoout' onClick={logout}>로그아웃</Link>
+							<Link to="/" className="btn-logout" onClick={logout} >로그아웃</Link>
 						</>
 					}
 					{!user &&
 						<>
-						{location.pathname === '/signup' ? <a href='/login' className='btn-login'>로그인</a> : <Link to="/signup" className="btn-join">회원가입</Link>}
+							{location.pathname === '/signup' ? <Link to="/login" className="btn-login">로그인</Link> : <Link to="/signup" className="btn-join">회원가입</Link>}
 						</>
 					}
-
 				</div>
 			</div>
 		</header>
