@@ -177,7 +177,7 @@ export default function Login() {
           
           {!isPending && <button className="black-btn" type="submit">로그인</button>}
           {isPending && <strong>로그인 중...</strong>}
-          {error && <strong>error</strong>}
+          {error && <strong>{error}</strong>}
           
         </form>
       </main>
